@@ -1,6 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", function () {
-    
+
     fetch("nav.html")
         .then(response => response.text())
         .then(data => {
@@ -12,5 +12,18 @@ document.addEventListener("DOMContentLoaded", function () {
         .catch(error => {
             console.error("Failed to fetch navigation bar:", error);
         });
+
+    // Fetch the CSS content
+    fetch("nav.css")
+        .then(response => response.text())
+        .then(cssData => {
+            const styleElement = document.createElement("style");
+            styleElement.textContent = cssData;
+            document.head.appendChild(styleElement);
+        })
+        .catch(error => {
+            console.error("Failed to fetch CSS:", error);
+        });
 });
+
 
