@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickable Boxes</title>
+    <!-- <link rel="stylesheet" href="main.css"> -->
+
+</head>
+
+<style>
+    body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.box:hover {
+    transform: scale(1.1);
+}
+
+
+</style>
+<body>
+    <div class="box-container">
+        <a href="text-convertor.html" class="box">API Maker</a>
+        <a href="key_seperator.html" class="box">"key value"</a>
+    </div>
+</body>
+</html>
